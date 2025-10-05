@@ -1,0 +1,31 @@
+{
+    "name": "buxtnet/buxtcore",
+    "description": "buxt.net mangager",
+    "type": "library",
+    "version": "1.0.0",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Buxt\\": "src/"
+        },
+        "files": [
+            "plugins/autoload.php"
+        ]
+    },
+    "extra": {
+        "acorn": {
+            "providers": [
+                "Buxt\\Providers\\BXServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": ">=8.1",
+        "buxtnet/codestar": "^1.0.0",
+        "roots/acorn": "^5.0",
+        "johnbillion/extended-cpts": "5.1.0",
+        "gregwar/captcha": "^1.3.0",
+        "illuminate/pagination": "^9.0|^10.0|^11.0|^12.0",
+        "mobiledetect/mobiledetectlib": "^4.8"
+    }
+}
